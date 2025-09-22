@@ -1,0 +1,165 @@
+/* Base */
+:root { --container: 960px; }
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    line-height: 1.5;
+    color: #fff;              /* белый текст */
+    background: #111;         /* тёмный фон страницы */
+    padding-top: 56px;        /* отступ под фиксированную шапку */
+}
+img { max-width: 100%; display: block; }
+.container { max-width: var(--container); margin: 0 auto; padding: 0 1rem; }
+
+/* Header/Nav */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
+.nav { display: flex; align-items: center; justify-content: space-between; min-height: 56px; }
+.logo { text-decoration: none; color: #ef4444; }
+.menu { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+.menu a { text-decoration: none; padding: .5rem .75rem; border-radius: .5rem; color: #ef4444; }
+.menu a[aria-current="page"] { background: #333; }
+
+/* Hero with positioning */
+.hero {
+    position: relative;
+    background: #1f1f1f;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: .75rem;
+}
+.hero-figure { position: relative; margin: 0; }
+.hero-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: .75rem;
+}
+.hero-figure figcaption { color: #fff; }
+
+/* Badge */
+.badge {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    padding: .25rem .5rem;
+    background: #ef4444;
+    color: #fff;
+    border: 1px solid #b91c1c;
+    border-radius: .5rem;
+    font-size: .875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Cards */
+.card {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: .75rem;
+    background: #1f1f1f;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+/* Tip */
+.tip {
+    background: #3f3f1f;
+    padding: 1rem;
+    border: 1px solid #f59e0b;
+    border-radius: .5rem;
+    color: #fff;
+}
+
+/* Table */
+.schedule { width: 100%; border-collapse: collapse; margin-top: 1rem; color: #fff; }
+.schedule th, .schedule td { border: 1px solid #333; padding: .5rem .75rem; text-align: left; }
+.schedule thead { background: #222; }
+
+/* Form */
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.contact-form button { font: inherit; }
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    max-width: 520px;
+    padding: .5rem .75rem;
+    border: 1px solid #444;
+    border-radius: .5rem;
+    background: #1f1f1f;
+    color: #fff;
+}
+.contact-form textarea { resize: vertical; }
+.contact-form button {
+    padding: .5rem .9rem;
+    border: 1px solid #fff;
+    background: #111;
+    color: #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.contact-form button:hover { background: #ef4444; color: #fff; }
+
+/* Footer */
+.site-footer {
+    margin-top: 2rem;
+    padding: 1.25rem;
+    background: #1a1a1a;
+    color: #fff;
+}
+.site-footer address { font-style: normal; }
+
+
+.menu a {
+    position: relative;
+    transition: color 0.3s;
+}
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #ef4444;
+    transition: width 0.3s;
+}
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.schedule tbody tr:nth-child(even) {
+    background: #1f1f1f;
+}
+.schedule tbody tr:hover {
+    background: #2a2a2a;
+}
+
+.contact-form button:hover {
+    background: #ef4444;
+    box-shadow: 0 0 10px #ef4444;
+}

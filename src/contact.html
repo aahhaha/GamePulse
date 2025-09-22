@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — GameHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="container nav">
+        <a class="logo" href="index.html"><strong>GameHub</strong></a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">News</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <h1>Contact Us</h1>
+    <p>Have feedback on our news or reviews? Send us a quick note below!</p>
+
+    <!-- форма с фейковой отправкой -->
+    <form class="contact-form" onsubmit="alert('Thanks! Your message has been sent.'); location.reload(); return false;">
+        <p>
+            <label for="name">Name</label><br>
+            <input id="name" name="name" type="text" required>
+        </p>
+        <p>
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="email" required>
+        </p>
+        <p>
+            <label for="favorite">Favorite Game</label><br>
+            <input id="favorite" name="favorite" type="text" placeholder="e.g. Zelda, Hollow Knight">
+        </p>
+
+        <h3>Your Feedback</h3>
+        <table class="schedule">
+            <thead>
+            <tr><th>Aspect</th><th>Liked 👍</th><th>Disliked 👎</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>Site Design</td><td><input type="checkbox" name="design_like"></td><td><input type="checkbox" name="design_dislike"></td></tr>
+            <tr><td>Navigation</td><td><input type="checkbox" name="nav_like"></td><td><input type="checkbox" name="nav_dislike"></td></tr>
+            <tr><td>Content</td><td><input type="checkbox" name="content_like"></td><td><input type="checkbox" name="content_dislike"></td></tr>
+            <tr><td>Overall</td><td><input type="checkbox" name="exp_like"></td><td><input type="checkbox" name="exp_dislike"></td></tr>
+            </tbody>
+        </table>
+
+        <button type="submit">Send</button>
+    </form>
+</main>
+
+<footer class="site-footer">
+    <p><small>© <time datetime="2025">2025</time> GameHub</small></p>
+</footer>
+</body>
+</html>
