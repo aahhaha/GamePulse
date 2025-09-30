@@ -1,36 +1,36 @@
-/* Base */
-:root 
-{   --container: 960px; 
+:root
+{   --container: 960px;
     --font-sans: system-ui, Arial, sans-serif;
     --font-serif: Georgia, "Times New Roman", serif;
     --font-mono: "Courier New", monospace;
 }
 
-.serif { font-family: var(--font-serif); }
-.mono  { font-family: var(--font-mono); }
+.serif {
+    font-family: var(--font-serif), serif; }
+.mono  {
+    font-family: var(--font-mono), monospace;}
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 600;
-  font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: italic;
 }
 
 * { box-sizing: border-box; }
 
-  html { font-size: 16px; }
+html { font-size: 16px; }
 
 body {
     margin: 0;
     font-family: system-ui, Arial, sans-serif;
     line-height: 1.5;
-    color: #fff;              /* белый текст */
-    background: #111;         /* тёмный фон страницы */
-    padding-top: 56px;        /* отступ под фиксированную шапку */
+    color: #fff;
+    background: #111;
+    padding-top: 56px;
 }
 img { max-width: 100%; display: block; }
 .container { max-width: var(--container); margin: 0 auto; padding: 0 1rem; }
 
-/* Header/Nav */
 .site-header {
     position: fixed;
     top: 0;
@@ -46,7 +46,6 @@ img { max-width: 100%; display: block; }
 .menu a { text-decoration: none; padding: .5rem .75rem; border-radius: .5rem; color: #ef4444; }
 .menu a[aria-current="page"] { background: #333; }
 
-/* Hero with positioning */
 .hero {
     position: relative;
     background: #1f1f1f;
@@ -63,7 +62,6 @@ img { max-width: 100%; display: block; }
 }
 .hero-figure figcaption { color: #fff; }
 
-/* Badge */
 .badge {
     position: absolute;
     right: 3rem;
@@ -78,7 +76,6 @@ img { max-width: 100%; display: block; }
     text-transform: uppercase;
 }
 
-/* Cards */
 .card {
     display: grid;
     grid-template-columns: 160px 1fr;
@@ -91,7 +88,6 @@ img { max-width: 100%; display: block; }
     color: #fff;
 }
 
-/* Tip */
 .tip {
     background: #3f3f1f;
     padding: 1rem;
@@ -100,12 +96,10 @@ img { max-width: 100%; display: block; }
     color: #fff;
 }
 
-/* Table */
 .schedule { width: 100%; border-collapse: collapse; margin-top: 1rem; color: #fff; }
 .schedule th, .schedule td { border: 1px solid #333; padding: .5rem .75rem; text-align: left; }
 .schedule thead { background: #222; }
 
-/* Form */
 .contact-form input,
 .contact-form select,
 .contact-form textarea,
@@ -132,7 +126,6 @@ img { max-width: 100%; display: block; }
 }
 .contact-form button:hover { background: #ef4444; color: #fff; }
 
-/* Footer */
 .site-footer {
     margin-top: 2rem;
     padding: 1.25rem;
@@ -182,36 +175,30 @@ img { max-width: 100%; display: block; }
 }
 
 
-/* element */
 h2 {
-  color: darkgreen;
+    color: darkgreen;
 }
 
-/* class  */
 .highlight {
-  color: blue;
+    color: blue;
 }
 
-/* ID  */
 #priority-demo {
-  color: orange;
+    color: orange;
 }
 
-/* общий стиль для всех ссылок */
 a {
-  color: #1d4ed8; 
-  text-decoration: none;
+    color: #1d4ed8;
+    text-decoration: none;
 }
 
-/* hover-эффект для ссылок */
 a:hover {
-  color: #0b62ff; 
-  text-decoration: underline;
-  background: #222; 
-  padding: 0.1rem 0.25rem; 
-  border-radius: 0.25rem; 
+    color: #0b62ff;
+    text-decoration: none;
+    background: #222;
+    padding: 0.1rem 0.25rem;
+    border-radius: 0.25rem;
 }
-/* Profile Card */
 .profile-card {
     max-width: 300px;
     margin: 1.5rem 0;
@@ -237,7 +224,18 @@ a:hover {
     box-shadow: 0 0 20px rgba(239,68,68,0.6);
 }
 
-/* Уникальная карточка по ID */
 #author-card {
-    background: #222; /* можно задать чуть другой фон */
+    background: #222;
 }
+
+.align-left   { text-align: left; }
+.align-right  { text-align: right; }
+.align-center { text-align: center; }
+.align-justify{ text-align: justify; }
+
+.measure { max-width: 68ch; }
+.meta    { font-size: .9rem; color: #bbb; }
+.caption { font-size: .875rem; color: #bbb; text-align: center; margin-top:.25rem; }
+.pull-quote { margin:1rem 0; padding:.75rem 1rem; border-left:3px solid #ef4444; background:#1a1a1a; font-style:italic; }
+
+td.num { text-align: right; }

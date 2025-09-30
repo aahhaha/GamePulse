@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GamePulse — Reviews</title>
     <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="GamePulse/styles.css" />
     <style>
-        /* Internal CSS demo for this page only */
         .two-col { margin-top: 1rem; }
         .left { float: left; width: 64%; }
         .right { float: right; width: 32%; }
@@ -22,28 +21,28 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="reviews.html" aria-current="page">Reviews</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../.idea/contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-
 <main class="container">
     <h1>Mini Reviews</h1>
-
 
     <section class="two-col">
         <div class="left">
             <article id="starfield" class="card">
-                <img src="starfield.jpg" alt="Starfield review" />
+                <img src="GamePulse/starfield.jpg" alt="Starfield review" />
                 <div>
                     <h2>Starfield — Revisited</h2>
-                    <p>After performance patches, exploration clicks. Main quest is uneven, but ship design and outposts are satisfying.</p>
+                    <p class="align-justify measure">
+                        After performance patches, exploration clicks. Main quest is uneven, but ship design and outposts are satisfying.
+                    </p>
+                    <p class="meta align-right"><strong>Score:</strong> 8/10</p>
                     <p><strong>Score:</strong> 8/10</p>
                 </div>
             </article>
-
-
+            <p class="pull-quote align-center">Three small games, big vibes.</p>
             <article id="indies" class="card">
                 <img src="hollowknight.jpg" alt="Indie platformer" />
                 <div>
@@ -57,7 +56,6 @@
             </article>
         </div>
 
-
         <aside class="right tip">
             <h3>Ratings Key</h3>
             <p>7 = Good, 8 = Very Good, 9 = Excellent.</p>
@@ -66,22 +64,23 @@
         <div class="clearfix"></div>
     </section>
 
-
     <h2>Ratings Table</h2>
     <table class="schedule">
         <thead>
         <tr><th>Game</th><th>Platform</th><th>Score</th></tr>
         </thead>
         <tbody>
-        <tr><td>Starfield</td><td>PC/Xbox</td><td>8.0</td></tr>
-        <tr><td>Metroidvania</td><td>PC/Switch</td><td>9.0</td></tr>
-        <tr><td>Farm Sim</td><td>PC</td><td>8.0</td></tr>
+        <tr><td>Starfield</td><td>PC/Xbox</td><td class="num">8.0</td></tr>
+        <tr><td>Metroidvania</td><td>PC/Switch</td><td class="num">9.0</td></tr>
+        <tr><td>Farm Sim</td><td>PC</td><td class="num">8.0</td></tr>
         </tbody>
     </table>
 </main>
 
-
 <footer class="site-footer">
+    <address>
+        Contact: <a href="mailto:242187@astanait.edu.kz">242187@astanait.edu.kz</a>
+    </address>
     <p><small>© <time datetime="2025">2025</time> GamePulse</small></p>
 </footer>
 </body>
