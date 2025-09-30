@@ -211,3 +211,33 @@ a:hover {
   padding: 0.1rem 0.25rem; 
   border-radius: 0.25rem; 
 }
+/* Profile Card */
+.profile-card {
+    max-width: 300px;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.profile-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.profile-card:hover {
+    border-color: #ef4444;
+    box-shadow: 0 0 20px rgba(239,68,68,0.6);
+}
+
+/* Уникальная карточка по ID */
+#author-card {
+    background: #222; /* можно задать чуть другой фон */
+}
