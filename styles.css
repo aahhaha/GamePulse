@@ -1,7 +1,24 @@
 /* Base */
-:root { --container: 960px; }
+:root 
+{   --container: 960px; 
+    --font-sans: system-ui, Arial, sans-serif;
+    --font-serif: Georgia, "Times New Roman", serif;
+    --font-mono: "Courier New", monospace;
+}
+
+.serif { font-family: var(--font-serif); }
+.mono  { font-family: var(--font-mono); }
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
 * { box-sizing: border-box; }
-html { font-size: 16px; }
+
+  html { font-size: 16px; }
+
 body {
     margin: 0;
     font-family: system-ui, Arial, sans-serif;
@@ -162,4 +179,35 @@ img { max-width: 100%; display: block; }
 .contact-form button:hover {
     background: #ef4444;
     box-shadow: 0 0 10px #ef4444;
+}
+
+
+/* element */
+h2 {
+  color: darkgreen;
+}
+
+/* class  */
+.highlight {
+  color: blue;
+}
+
+/* ID  */
+#priority-demo {
+  color: orange;
+}
+
+/* общий стиль для всех ссылок */
+a {
+  color: #1d4ed8; 
+  text-decoration: none;
+}
+
+/* hover-эффект для ссылок */
+a:hover {
+  color: #0b62ff; 
+  text-decoration: underline;
+  background: #222; 
+  padding: 0.1rem 0.25rem; 
+  border-radius: 0.25rem; 
 }
